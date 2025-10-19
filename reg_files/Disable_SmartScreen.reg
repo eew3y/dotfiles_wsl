@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Вимкнення Windows Defender SmartScreen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+
+; Вимкнення SmartScreen для Microsoft Edge
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"Enabled"=dword:00000000
+
+; Вимкнення SmartScreen для Microsoft Store apps
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"DisableSmartScreen"=dword:00000001
